@@ -6,7 +6,7 @@
 
 ```bash
 # 安装依赖
-python -m pip install uiautomator2 opencv
+python -m pip install uiautomator2 opencv-python
 
 # adb 连接
 # 使用 MuMu 模拟器，确保屏幕大小为 1920（长） * 1080（宽）
