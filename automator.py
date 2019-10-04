@@ -46,7 +46,7 @@ class Automator:
                 self._swipe()
 
                 # 取消注释下一行，即可实现对特定建筑的升级
-                # self._upgrade(1)
+                self._upgrade(8)
 
                 # 开启 trainMode 后，会输出当前货物的搬运成果，随后关闭应用。
                 if self.trainMode:
@@ -75,13 +75,13 @@ class Automator:
         """
         升级指定建筑。
         """
-        self.d.click(1000, 1100)
+        self.d.click(981, 1307) #编辑按钮的位置
         sx, sy = self._get_position(id)
         self.d.click(sx, sy)
         time.sleep(1)
-        self.d.click(875, 1750)
+        self.d.click(847, 2071) # 升级的按钮
         time.sleep(2)
-        self.d.click(1000, 1100)
+        self.d.click(981, 1307)
 
     @staticmethod
     def _get_position(key):
@@ -89,15 +89,15 @@ class Automator:
         获取指定建筑的屏幕位置。
         """
         positions = {
-            1: (294, 1184),
-            2: (551, 1061),
-            3: (807, 961),
-            4: (275, 935),
-            5: (535, 810),
-            6: (799, 687),
-            7: (304, 681),
-            8: (541, 568),
-            9: (787, 447)
+            1: (286, 1432),
+            2: (550, 1282),
+            3: (807, 1141),
+            4: (278, 1138),
+            5: (546, 1026),
+            6: (821, 892),
+            7: (303, 896),
+            8: (550, 789),
+            9: (792, 677)
         }
         return positions.get(key)
 

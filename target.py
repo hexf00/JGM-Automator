@@ -6,6 +6,7 @@ class TargetType(Enum):
     货物枚举类型。通过截屏制作货物图片时，请确保截屏符合实际大小。
     """
     Chair = 'targets/Chair.jpg'
+    Coal = 'targets/Coal.jpg'
     Vegetable = 'targets/Vegetable.jpg'
     Bottle = 'targets/Bottle.jpg'
     Wood = 'targets/Wood.jpg'
